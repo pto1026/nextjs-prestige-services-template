@@ -114,12 +114,36 @@ export default function Home() {
                   Learn more
                 </a>
                 <div className={styles.briefLeft__pictures}>
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-1.jpg" alt="Profile Picture" />
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-2.jpg" alt="Profile Picture" />
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-3.jpg" alt="Profile Picture" />
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-4.jpg" alt="Profile Picture" />
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-5.jpg" alt="Profile Picture" />
-                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-6.jpg" alt="Profile Picture" />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-1.jpg"
+                    alt="Profile Picture"
+                  />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-2.jpg"
+                    alt="Profile Picture"
+                  />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-3.jpg"
+                    alt="Profile Picture"
+                  />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-4.jpg"
+                    alt="Profile Picture"
+                  />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-5.jpg"
+                    alt="Profile Picture"
+                  />
+                  <img
+                    className={styles.briefLeft__picture}
+                    src="imgs/profile-picture-6.jpg"
+                    alt="Profile Picture"
+                  />
                 </div>
               </div>
               <div className={styles.briefRight}>
@@ -130,17 +154,26 @@ export default function Home() {
                   vulputate no, mel no regione eligendi.
                 </p>
                 <a className={styles.learnMoreButton}>
-                  <img className={styles.learnMoreButton__arrow} src="icons/caret-right.svg" alt="Right arrow"></img> Learn More
+                  <img
+                    className={styles.learnMoreButton__arrow}
+                    src="icons/caret-right.svg"
+                    alt="Right arrow"
+                  ></img>{" "}
+                  Learn More
                 </a>
                 <div className={styles.briefRight__claims}>
-                <p className={styles.briefRight__claimsFact}>
-                  25,000,000+{' '}
-                  <span className={styles.briefRight__claimsText}>Users to date</span>
-                </p>
-                <p className={styles.briefRight__claimsFact}>
-                  92%{' '}
-                  <span className={styles.briefRight__claimsText}>Rebook rate</span>
-                </p>                
+                  <p className={styles.briefRight__claimsFact}>
+                    25,000,000+{" "}
+                    <span className={styles.briefRight__claimsText}>
+                      Users to date
+                    </span>
+                  </p>
+                  <p className={styles.briefRight__claimsFact}>
+                    92%{" "}
+                    <span className={styles.briefRight__claimsText}>
+                      Rebook rate
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -149,12 +182,78 @@ export default function Home() {
 
         <section className={styles.sectionPersonalizations}>
           <div className={styles.sectionPersonalizations__header}>
-            <h2 className={styles.mainHeading}>
-              Discover
-            </h2>
+            <h2 className={styles.mainHeading}>Discover</h2>
             <h3 className={styles.sectionPersonalizations__headerText}>
               Find exactly what you are looking for
             </h3>
+          </div>
+          <div className={styles.sectionPersonalizations__containerForBoxes}>
+            <div className={styles.sectionPersonalizations__box}>
+              <img
+                src="imgs/personalize-1.jpg"
+                alt="Oceanside landscape"
+                className={styles.sectionPersonalizations__image}
+              />
+            </div>
+            <div className={styles.sectionPersonalizations__box}>
+              <h2 className={styles.mainHeading}>Harness</h2>
+              <h4 className={styles.sectionPersonalizations__boxHeading}>
+                Realize greater potential
+              </h4>
+              <p className={styles.sectionPersonalizations__boxText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at augue quam. Fusce est risus, varius ac congue sit amet,
+                consequat tristique metus. Pellentesque leo vulputate fermentum
+                vitae nunc pretium leo tempor mollis.
+              </p>
+              <a href="#" className={styles.buttonPrimary}>
+                Get Started
+              </a>
+            </div>
+            <div className={styles.sectionPersonalizations__box}>
+              <h2 className={styles.mainHeading}>Empower</h2>
+              <h4 className={styles.sectionPersonalizations__boxHeading}>
+                Adjust for more everything
+              </h4>
+              <p className={styles.sectionPersonalizations__boxText}>
+                Curabitur eget enim ac velit cursus iaculis sit amet luctus
+                neque. Class aptent taciti sociosqu ad leo vulputate fermentum
+                litora torquent per conubia nostra, per inceptos himenaeos.
+                Vestibulum vel lectus sit amet tellus.
+              </p>
+              <a href="#" className={styles.buttonPrimary}>
+                Get Started
+              </a>
+            </div>
+            <div className={styles.sectionPersonalizations__box}>
+              <img
+                src="imgs/personalize-2.jpg"
+                alt="Snowy landsape"
+                className={styles.sectionPersonalizations__image}
+              />
+            </div>
+            <div className={styles.sectionPersonalizations__box}>
+              <img
+                src="imgs/personalize-3.jpg"
+                alt="Yellowstone landscape"
+                className={styles.sectionPersonalizations__image}
+              />
+            </div>
+            <div className={styles.sectionPersonalizations__box}>
+              <h2 className={styles.mainHeading}>Empower</h2>
+              <h4 className={styles.sectionPersonalizations__boxHeading}>
+                Enhance your life experience
+              </h4>
+              <p className={styles.sectionPersonalizations__boxText}>
+                Hendrerit mattis. Mauris gravida lacinia lacus, non tincidunt
+                nunc egestas eu. Pellentesque vehicula nisl non lectus blandit
+                scelerisque. Curabitur lacinia sapien risus, id lobortis odio
+                placerat in. Nullam ultrices elit.
+              </p>
+              <a href="#" className={styles.buttonPrimary}>
+                Get Started
+              </a>
+            </div>
           </div>
         </section>
       </main>
