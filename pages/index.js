@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Logo from "../components/logo/logo";
-import { useState } from "react";
 
 export default function Home() {
   return (
@@ -397,7 +396,7 @@ export default function Home() {
                   />
                 </p>
                 <p className={styles.Faq}>
-                  Why doesn't every company sound this great?{" "}
+                  Why doesn&apos;t every company sound this great?{" "}
                   <img
                     className={styles.Faq__icon}
                     src="icons/caret-down.svg"
@@ -455,13 +454,174 @@ export default function Home() {
               </p>
 
               <div className={styles.sectionStats__stats}>
-                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>24k+</span>Campaigns created</p>
-                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>365%</span>Sales increase</p>
-                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>67%</span>Response rate increased</p>
-                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>125%</span>Open rate increase</p>
+                <p className={styles.sectionStats__stat}>
+                  <span className={styles.sectionStats__number}>24k+</span>
+                  Campaigns created
+                </p>
+                <p className={styles.sectionStats__stat}>
+                  <span className={styles.sectionStats__number}>365%</span>Sales
+                  increase
+                </p>
+                <p className={styles.sectionStats__stat}>
+                  <span className={styles.sectionStats__number}>67%</span>
+                  Response rate increased
+                </p>
+                <p className={styles.sectionStats__stat}>
+                  <span className={styles.sectionStats__number}>125%</span>Open
+                  rate increase
+                </p>
               </div>
             </div>
-            <img className={styles.sectionStats__image} src="imgs/contract-signing.jpg" alt="Contract signing" />
+            <img
+              className={styles.sectionStats__image}
+              src="imgs/contract-signing.jpg"
+              alt="Contract signing"
+            />
+          </div>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <div className={styles.container}>
+            <div className={styles.sectionTestimonials__header}>
+              <h2 className={styles.mainHeading}>Clients</h2>
+              <h3 className={styles.sectionTestimonials__title}>
+                Customer testimonials
+              </h3>
+              <p className={styles.sectionTestimonials__text}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                qui sequi obcaecati omnis, excepturi, fugiat quos ipsam
+                similique inventore maxime minima quas tenetur velit facilis
+                dolorem possimus corrupti. Distinctio, voluptatum!
+              </p>
+            </div>
+            <div className={styles.testimonials}>
+              <div className={styles.testimonialBox}>
+                <div className={styles.testimonialBox__stars}>
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                </div>
+                <p className={styles.testimonialBox__testimonial}>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem voluptate dolor unde suscipit maiores nam hic
+                  magnam, accusantium omnis soluta laborum distinctio,
+                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                </p>
+                <div className={styles.author}>
+                  <img className={styles.author__image} src="imgs/profile-picture-1.jpg" alt="Profile picture" />
+                  <div className={styles.author__nameBox}>
+                    <p className={styles.author__name}>Matthew Turner</p>
+                    <p className={styles.author__job}>Marketing Manager, Groovestreet</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.testimonialBox}>
+                <div className={styles.testimonialBox__stars}>
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                </div>
+                <p className={styles.testimonialBox__testimonial}>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem voluptate dolor unde suscipit maiores nam hic
+                  magnam, accusantium omnis soluta laborum distinctio,
+                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                </p>
+                <div className={styles.author}>
+                  <img className={styles.author__image} src="imgs/profile-picture-3.jpg" alt="Profile picture" />
+                  <div className={styles.author__nameBox}>
+                    <p className={styles.author__name}>Sarah Woodley</p>
+                    <p className={styles.author__job}>VP of Marketing, Nam-zim</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.testimonialBox}>
+                <div className={styles.testimonialBox__stars}>
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                  <img
+                    className={styles.testimonialBox__star}
+                    src="icons/star-fill.svg"
+                    alt="Star icon"
+                  />
+                </div>
+                <p className={styles.testimonialBox__testimonial}>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem voluptate dolor unde suscipit maiores nam hic
+                  magnam, accusantium omnis soluta laborum distinctio,
+                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                </p>
+                <div className={styles.author}>
+                  <img className={styles.author__image} src="imgs/profile-picture-2.jpg" alt="Profile picture" />
+                  <div className={styles.author__nameBox}>
+                    <p className={styles.author__name}>Nicholas Lancaster</p>
+                    <p className={styles.author__job}>Sales Engineer, Finjob</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

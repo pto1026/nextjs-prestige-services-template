@@ -503,3 +503,92 @@
 
     }
 }
+
+.sectionTestimonials {
+    padding: 9.6rem 3.2rem;
+
+    &__header {
+
+    }
+
+    .mainHeading {
+        margin-bottom: 2.4rem;
+    }
+
+    &__title {
+        font-size: 4.8rem;
+        margin-bottom: 2.4rem;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+    }
+
+    &__text {
+        margin-bottom: 9.6rem;
+        font-size: 2rem;
+        width: 60%;
+    }
+}
+
+.testimonials {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.testimonialBox {
+    padding: 3.2rem;
+    border: .2rem solid var(--main-color-darker);
+    border-radius: 1.1rem;
+    background-color: var(--main-color-light);
+    color: var(--best-contrast-on-main-light);
+    box-shadow: 0 1.2rem 4rem rgba(28, 109, 85, 0.80);
+
+    &:hover {
+        transform: translateY(-1.8rem);
+        box-shadow: 0 2.4rem 8rem rgba(28, 109, 85, 0.80);
+    }
+
+    &__stars {
+        display: flex;
+        margin-bottom: 3.2rem;
+    }
+
+    &__star {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    &__testimonial {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        margin-bottom: 3.2rem;
+    }
+    
+}
+
+.author {
+    display: flex;
+    align-items: center;
+
+
+    &__image {
+        margin-right: 2.4rem;
+        width: 6.0rem;
+        height: 6.0rem;
+        border-radius: 50%;
+    }
+
+    &__nameBox {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__job {
+        font-size: 1.4rem;
+    }
+}
