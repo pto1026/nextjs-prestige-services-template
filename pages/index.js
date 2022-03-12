@@ -113,6 +113,14 @@ export default function Home() {
                   </span>
                   Learn more
                 </a>
+                <div className={styles.briefLeft__pictures}>
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-1.jpg" alt="Profile Picture" />
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-2.jpg" alt="Profile Picture" />
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-3.jpg" alt="Profile Picture" />
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-4.jpg" alt="Profile Picture" />
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-5.jpg" alt="Profile Picture" />
+                  <img className={styles.briefLeft__picture} src="imgs/profile-picture-6.jpg" alt="Profile Picture" />
+                </div>
               </div>
               <div className={styles.briefRight}>
                 <h2 className={styles.mainHeading}>Discover your true self</h2>
@@ -124,6 +132,16 @@ export default function Home() {
                 <a className={styles.learnMoreButton}>
                   <img className={styles.learnMoreButton__arrow} src="icons/caret-right.svg" alt="Right arrow"></img> Learn More
                 </a>
+                <div className={styles.briefRight__claims}>
+                <p className={styles.briefRight__claimsFact}>
+                  25,000,000+{' '}
+                  <span className={styles.briefRight__claimsText}>Users to date</span>
+                </p>
+                <p className={styles.briefRight__claimsFact}>
+                  92%{' '}
+                  <span className={styles.briefRight__claimsText}>Rebook rate</span>
+                </p>                
+                </div>
               </div>
             </div>
           </div>
