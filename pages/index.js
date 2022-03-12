@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Logo from "../components/logo/logo";
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Home() {
-
   return (
     <div className={styles.root}>
       <div className={styles.navbar}>
@@ -441,6 +440,28 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+        <section className={styles.sectionStats}>
+          <div className={styles.container}>
+            <div className={styles.sectionStats__textColumn}>
+              <h2 className={styles.mainHeading}>Statistics</h2>
+              <h3 className={styles.sectionStats__heading}>
+                Find out everything you need to know
+              </h3>
+              <p className={styles.sectionStats__text}>
+                Eos eu nonumy legere, sale oratio adversarium no eos. Ne duo
+                decore mandamus persequeris, pro no officiis definitiones.
+              </p>
+
+              <div className={styles.sectionStats__stats}>
+                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>24k+</span>Campaigns created</p>
+                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>365%</span>Sales increase</p>
+                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>67%</span>Response rate increased</p>
+                <p className={styles.sectionStats__stat}><span className={styles.sectionStats__number}>125%</span>Open rate increase</p>
+              </div>
+            </div>
+            <img className={styles.sectionStats__image} src="imgs/contract-signing.jpg" alt="Contract signing" />
           </div>
         </section>
       </main>
