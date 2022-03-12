@@ -1,0 +1,102 @@
+///////////////////////////
+// Scales
+//
+// 0.702 / .79 / .889 / 1 / 1.125 / 1.266 / 1.424 / 1.602 / 1.802 / 2.027 / 2.281 / 2.566 / 2.887 / 3.247 / 3.653 / 4.11 / 4.624 / 5.202 / 5.852 / 6.583 / 7.406 / 8.332 / 9.373
+
+.root {
+    border-top: 1.2rem solid var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    padding: 1.6rem 3.2rem;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--main-color);
+
+    &__company {
+        display: flex;
+        align-items:center;
+        gap: 3.2rem;
+        color: var(--main-color);
+    }
+
+    &__companyName {
+        font-size: 1.6rem;
+        color: var(--gray-8);
+    }
+
+    &__logo {
+        height: 100%;
+    }
+}
+
+.sectionHero {
+    margin-bottom: 9.6rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem;
+}
+
+.flexed {
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+    justify-content: space-between;
+}
+
+.headerBox {
+    flex: 0 0 50%;
+}
+
+.mainHeading {
+    font-size: 2.281rem;
+    font-weight: 600;
+    color: var(--gray-6);
+    margin-bottom: 9.6rem;
+    margin-top: 9.6rem;
+}
+
+.header {
+    font-size: 6.6rem;
+    font-weight: 700;
+    line-height: 1.01;
+    margin-bottom: 4.8rem;
+}
+
+.headerText {
+    font-size: 1.802rem;
+    line-height: 1.7;
+}
+
+.heroImg {
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
+.featuredSection {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem;
+    background-image: linear-gradient(to right bottom, var(--gray-0), var(--gray-2));
+    border-radius: 1.1rem;
+}
+
+.featuredLogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featuredLogo {
+    font-size: 1.6rem;
+    opacity: 50%;
+}
+.logo {
+    height: 100%;
+    opacity: 50%;
+    color: currentColor;
+}
