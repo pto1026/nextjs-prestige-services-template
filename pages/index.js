@@ -659,6 +659,14 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <section className={styles.footer}>
+        <div className={styles.container}>
+          <p className={styles.copyright}>
+          &#169; Prestige Services 2022. All rights reserved.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

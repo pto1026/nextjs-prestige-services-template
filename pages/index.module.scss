@@ -661,3 +661,89 @@
 .buttonOutline:hover, .buttonOutline:active {
     background-color: var(--gray-1);
 }
+
+
+.footer {
+    border-top: 1px solid var(--gray-6);
+
+    .container {
+        padding: 0 3.2rem;
+    }
+}
+
+.copyright {
+    margin: 4.8rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+@media (max-width: 46.5rem) {
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2cols {
+        grid-template-columns: 1fr;
+    }
+
+    .flexed {
+        flex-direction: column;
+    }
+    .testimonials {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 41rem) {
+    .sectionStats .container {
+        flex-direction: column;
+    }
+    .briefLeft {
+        margin-bottom: 6rem;
+    }
+    
+    .logo:last-child {
+        display: none;
+    }
+
+    .navbar__link {
+        display: none;
+    }
+
+    .navbar__link:last-child {
+        display: block;
+    }
+}
+
+@media (max-width: 28rem) {
+    .FaqGrid {
+        grid-template-columns: 1fr;
+        row-gap: 6rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionPersonalizations__containerForBoxes {
+        grid-template-columns: 1fr;
+    }
+
+    .logo:first-child {
+        display: none;
+    }
+
+    .sectionCta .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 18.75rem) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo:nth-child(2) {
+        display: none;
+    }
+}
