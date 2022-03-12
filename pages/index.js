@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Logo from "../components/logo/logo";
+import { useState } from 'react';
 
 export default function Home() {
+
   return (
     <div className={styles.root}>
       <div className={styles.navbar}>
@@ -180,78 +182,80 @@ export default function Home() {
         </section>
 
         <section className={styles.sectionPersonalizations}>
-          <div className={styles.sectionPersonalizations__header}>
-            <h2 className={styles.mainHeading}>Discover</h2>
-            <h3 className={styles.sectionPersonalizations__headerText}>
-              Find exactly what you are looking for
-            </h3>
-          </div>
-          <div className={styles.sectionPersonalizations__containerForBoxes}>
-            <div className={styles.sectionPersonalizations__box}>
-              <img
-                src="imgs/personalize-1.jpg"
-                alt="Oceanside landscape"
-                className={styles.sectionPersonalizations__image}
-              />
+          <div className={styles.container}>
+            <div className={styles.sectionPersonalizations__header}>
+              <h2 className={styles.mainHeading}>Discover</h2>
+              <h3 className={styles.sectionPersonalizations__headerText}>
+                Find exactly what you are looking for
+              </h3>
             </div>
-            <div className={styles.sectionPersonalizations__box}>
-              <h2 className={styles.mainHeading}>Harness</h2>
-              <h4 className={styles.sectionPersonalizations__boxHeading}>
-                Realize greater potential
-              </h4>
-              <p className={styles.sectionPersonalizations__boxText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at augue quam. Fusce est risus, varius ac congue sit amet,
-                consequat tristique metus. Pellentesque leo vulputate fermentum
-                vitae nunc pretium leo tempor mollis.
-              </p>
-              <a href="#" className={styles.buttonPrimary}>
-                Get Started
-              </a>
-            </div>
-            <div className={styles.sectionPersonalizations__box}>
-              <h2 className={styles.mainHeading}>Empower</h2>
-              <h4 className={styles.sectionPersonalizations__boxHeading}>
-                Adjust for more everything
-              </h4>
-              <p className={styles.sectionPersonalizations__boxText}>
-                Curabitur eget enim ac velit cursus iaculis sit amet luctus
-                neque. Class aptent taciti sociosqu ad leo vulputate fermentum
-                litora torquent per conubia nostra, per inceptos himenaeos.
-                Vestibulum vel lectus sit amet tellus.
-              </p>
-              <a href="#" className={styles.buttonPrimary}>
-                Get Started
-              </a>
-            </div>
-            <div className={styles.sectionPersonalizations__box}>
-              <img
-                src="imgs/personalize-2.jpg"
-                alt="Snowy landsape"
-                className={styles.sectionPersonalizations__image}
-              />
-            </div>
-            <div className={styles.sectionPersonalizations__box}>
-              <img
-                src="imgs/personalize-3.jpg"
-                alt="Yellowstone landscape"
-                className={styles.sectionPersonalizations__image}
-              />
-            </div>
-            <div className={styles.sectionPersonalizations__box}>
-              <h2 className={styles.mainHeading}>Empower</h2>
-              <h4 className={styles.sectionPersonalizations__boxHeading}>
-                Enhance your life experience
-              </h4>
-              <p className={styles.sectionPersonalizations__boxText}>
-                Hendrerit mattis. Mauris gravida lacinia lacus, non tincidunt
-                nunc egestas eu. Pellentesque vehicula nisl non lectus blandit
-                scelerisque. Curabitur lacinia sapien risus, id lobortis odio
-                placerat in. Nullam ultrices elit.
-              </p>
-              <a href="#" className={styles.buttonPrimary}>
-                Get Started
-              </a>
+            <div className={styles.sectionPersonalizations__containerForBoxes}>
+              <div className={styles.sectionPersonalizations__box}>
+                <img
+                  src="imgs/personalize-1.jpg"
+                  alt="Oceanside landscape"
+                  className={styles.sectionPersonalizations__image}
+                />
+              </div>
+              <div className={styles.sectionPersonalizations__box}>
+                <h2 className={styles.mainHeading}>Harness</h2>
+                <h4 className={styles.sectionPersonalizations__boxHeading}>
+                  Realize greater potential
+                </h4>
+                <p className={styles.sectionPersonalizations__boxText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at augue quam. Fusce est risus, varius ac congue sit
+                  amet, consequat tristique metus. Pellentesque leo vulputate
+                  fermentum vitae nunc pretium leo tempor mollis.
+                </p>
+                <a href="#" className={styles.buttonPrimary}>
+                  Get Started
+                </a>
+              </div>
+              <div className={styles.sectionPersonalizations__box}>
+                <h2 className={styles.mainHeading}>Empower</h2>
+                <h4 className={styles.sectionPersonalizations__boxHeading}>
+                  Adjust for more everything
+                </h4>
+                <p className={styles.sectionPersonalizations__boxText}>
+                  Curabitur eget enim ac velit cursus iaculis sit amet luctus
+                  neque. Class aptent taciti sociosqu ad leo vulputate fermentum
+                  litora torquent per conubia nostra, per inceptos himenaeos.
+                  Vestibulum vel lectus sit amet tellus.
+                </p>
+                <a href="#" className={styles.buttonPrimary}>
+                  Get Started
+                </a>
+              </div>
+              <div className={styles.sectionPersonalizations__box}>
+                <img
+                  src="imgs/personalize-2.jpg"
+                  alt="Snowy landsape"
+                  className={styles.sectionPersonalizations__image}
+                />
+              </div>
+              <div className={styles.sectionPersonalizations__box}>
+                <img
+                  src="imgs/personalize-3.jpg"
+                  alt="Yellowstone landscape"
+                  className={styles.sectionPersonalizations__image}
+                />
+              </div>
+              <div className={styles.sectionPersonalizations__box}>
+                <h2 className={styles.mainHeading}>Empower</h2>
+                <h4 className={styles.sectionPersonalizations__boxHeading}>
+                  Enhance your life experience
+                </h4>
+                <p className={styles.sectionPersonalizations__boxText}>
+                  Hendrerit mattis. Mauris gravida lacinia lacus, non tincidunt
+                  nunc egestas eu. Pellentesque vehicula nisl non lectus blandit
+                  scelerisque. Curabitur lacinia sapien risus, id lobortis odio
+                  placerat in. Nullam ultrices elit.
+                </p>
+                <a href="#" className={styles.buttonPrimary}>
+                  Get Started
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -291,7 +295,7 @@ export default function Home() {
                 </h5>
                 <p className={styles.featureBox__text}>
                   Ipsum felis et nulla. Integer accumsan, mi quis consectetur
-                  suscipit. 
+                  suscipit.
                 </p>
               </div>
               <div className={styles.featureBox}>
@@ -354,7 +358,91 @@ export default function Home() {
           </div>
         </section>
 
-        <section 
+        <section className={styles.sectionFaq}>
+          <div className={styles.container}>
+            <div className={styles.sectionFaq__header}>
+              <h2 className={styles.mainHeading}>Support</h2>
+              <h3 className={styles.sectionFaq__title}>
+                Frequently asked questions
+              </h3>
+              <p className={styles.sectionFaq__headerText}>
+                Mea latine laoreet postulant ad, nam ut solum equidem
+                appellantur. Causae appareat maiestatis ei nec, pro vero
+                voluptatum.
+              </p>
+            </div>
+            <div className={styles.FaqGrid}>
+              <div className={styles.FaqColumn}>
+                <p className={styles.Faq}>
+                  When does information update?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  How long does delivery of services take?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  What does you mean by any location?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  Why doesn't every company sound this great?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+              </div>
+              <div className={styles.FaqColumn}>
+                <p className={styles.Faq}>
+                  What does it take to get this done?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  How much longer do I have to wait?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  Can I bring my mistress along with me?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+                <p className={styles.Faq}>
+                  What, out of all these features, is the big secret?{" "}
+                  <img
+                    className={styles.Faq__icon}
+                    src="icons/caret-down.svg"
+                    alt="Down Caret"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

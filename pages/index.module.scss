@@ -150,7 +150,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 4.8rem;
     // margin: 0 auto;
-    padding: 9.6rem 0;
+    padding: 9.6rem 3.2rem;;
 }
 
 .briefLeft {
@@ -261,8 +261,10 @@
 }
 
 .sectionPersonalizations {
-    max-width: 120rem;
-    margin: 0 auto;
+
+    .container {
+        padding: 0 3.2rem;
+    }
 
     &__header {
         text-align: center;
@@ -318,6 +320,9 @@
 .sectionFeatures {
     background-color: var(--main-color-lightest);
 
+    .container {
+        padding: 0 3.2rem;
+    }
     &__header {
         padding-top: 9.6rem;
     }
@@ -371,5 +376,68 @@
     &__text {
         font-size: 1.8rem;
         line-height: 1.7;
+    }
+}
+
+.sectionFaq {
+    padding: 9.6rem 0;
+
+    .container {
+        padding: 0 3.2rem;
+    }
+
+    &__header {
+        margin-bottom: 7.2rem;
+    }
+
+    .mainHeading {
+        margin-bottom: 4.8rem;
+    }
+
+    &__title {
+        font-size: 4.8rem;
+        margin-bottom: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+    }
+
+    &__headerText {
+        font-size: 2.4rem;
+        line-height: 1.8;
+    }
+}
+
+.FaqGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7.2rem;
+}
+
+.FaqColumn {
+    border: .2rem solid var(--gray-6);
+    border-radius: 1.1rem;
+}
+
+.Faq {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 1.6rem;
+    border-bottom: .2rem solid var(--gray-6);
+    
+    &:last-child {
+        border: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        
+
     }
 }
