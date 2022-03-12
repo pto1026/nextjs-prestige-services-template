@@ -46,7 +46,7 @@
         & > * {
             transition: all .3s;
         }
-        & :hover {
+        & :last-child:hover {
             transform: translateY(-.3rem);
         }
     }
@@ -747,3 +747,5 @@
         display: none;
     }
 }
+
+@import "about.module.scss";

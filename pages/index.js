@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Logo from "../components/logo/logo";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={styles.root}>
       <div className={styles.navbar}>
         <div className={styles.navbar__company}>
-          <Logo className={styles.navbar__logo} />
+          <img className={styles.navbar__logo} />
           <p className={styles.navbar__companyname}>Prestige Services</p>
         </div>
         <nav className={styles.navbar__nav}>
@@ -16,7 +17,9 @@ export default function Home() {
               <a href="#">Home</a>
             </li>
             <li className={styles.navbar__link}>
-              <a href="#">About</a>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
             </li>
             <li className={styles.navbar__link}>
               <a href="#">Contact</a>
@@ -524,10 +527,11 @@ export default function Home() {
                   />
                 </div>
                 <p className={styles.testimonialBox__testimonial}>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem voluptate dolor unde suscipit maiores nam hic
                   magnam, accusantium omnis soluta laborum distinctio,
-                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                  cupiditate commodi! Neque quisquam ipsum eveniet est
+                  ullam?&quot;
                 </p>
                 <div className={styles.author}>
                   <img
@@ -572,10 +576,11 @@ export default function Home() {
                   />
                 </div>
                 <p className={styles.testimonialBox__testimonial}>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem voluptate dolor unde suscipit maiores nam hic
                   magnam, accusantium omnis soluta laborum distinctio,
-                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                  cupiditate commodi! Neque quisquam ipsum eveniet est
+                  ullam?&quot;
                 </p>
                 <div className={styles.author}>
                   <img
@@ -620,10 +625,11 @@ export default function Home() {
                   />
                 </div>
                 <p className={styles.testimonialBox__testimonial}>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem voluptate dolor unde suscipit maiores nam hic
                   magnam, accusantium omnis soluta laborum distinctio,
-                  cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
+                  cupiditate commodi! Neque quisquam ipsum eveniet est
+                  ullam?&quot;
                 </p>
                 <div className={styles.author}>
                   <img
@@ -653,9 +659,15 @@ export default function Home() {
                 aperiam illum ab earum.
               </p>
 
-              <a href="#" className={styles.buttonOutline}>Get started - it&apos;s free</a>
+              <a href="#" className={styles.buttonOutline}>
+                Get started - it&apos;s free
+              </a>
             </div>
-            <img className={styles.sectionCta__right} src="imgs/cta-girl.jpg" alt="Beautiful woman" />
+            <img
+              className={styles.sectionCta__right}
+              src="imgs/cta-girl.jpg"
+              alt="Beautiful woman"
+            />
           </div>
         </section>
       </main>
@@ -663,7 +675,7 @@ export default function Home() {
       <section className={styles.footer}>
         <div className={styles.container}>
           <p className={styles.copyright}>
-          &#169; Prestige Services 2022. All rights reserved.
+            &#169; Prestige Services 2022. All rights reserved.
           </p>
         </div>
       </section>
