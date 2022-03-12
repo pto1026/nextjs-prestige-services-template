@@ -146,6 +146,17 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className={styles.sectionPersonalizations}>
+          <div className={styles.sectionPersonalizations__header}>
+            <h2 className={styles.mainHeading}>
+              Discover
+            </h2>
+            <h3 className={styles.sectionPersonalizations__headerText}>
+              Find exactly what you are looking for
+            </h3>
+          </div>
+        </section>
       </main>
     </div>
   );
