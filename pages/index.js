@@ -530,10 +530,16 @@ export default function Home() {
                   cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
                 </p>
                 <div className={styles.author}>
-                  <img className={styles.author__image} src="imgs/profile-picture-1.jpg" alt="Profile picture" />
+                  <img
+                    className={styles.author__image}
+                    src="imgs/profile-picture-1.jpg"
+                    alt="Profile picture"
+                  />
                   <div className={styles.author__nameBox}>
                     <p className={styles.author__name}>Matthew Turner</p>
-                    <p className={styles.author__job}>Marketing Manager, Groovestreet</p>
+                    <p className={styles.author__job}>
+                      Marketing Manager, Groovestreet
+                    </p>
                   </div>
                 </div>
               </div>
@@ -572,10 +578,16 @@ export default function Home() {
                   cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
                 </p>
                 <div className={styles.author}>
-                  <img className={styles.author__image} src="imgs/profile-picture-3.jpg" alt="Profile picture" />
+                  <img
+                    className={styles.author__image}
+                    src="imgs/profile-picture-3.jpg"
+                    alt="Profile picture"
+                  />
                   <div className={styles.author__nameBox}>
                     <p className={styles.author__name}>Sarah Woodley</p>
-                    <p className={styles.author__job}>VP of Marketing, Nam-zim</p>
+                    <p className={styles.author__job}>
+                      VP of Marketing, Nam-zim
+                    </p>
                   </div>
                 </div>
               </div>
@@ -614,7 +626,11 @@ export default function Home() {
                   cupiditate commodi! Neque quisquam ipsum eveniet est ullam?"
                 </p>
                 <div className={styles.author}>
-                  <img className={styles.author__image} src="imgs/profile-picture-2.jpg" alt="Profile picture" />
+                  <img
+                    className={styles.author__image}
+                    src="imgs/profile-picture-2.jpg"
+                    alt="Profile picture"
+                  />
                   <div className={styles.author__nameBox}>
                     <p className={styles.author__name}>Nicholas Lancaster</p>
                     <p className={styles.author__job}>Sales Engineer, Finjob</p>
@@ -622,6 +638,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.sectionCta}>
+          <div className={styles.container}>
+            <div className={styles.sectionCta__left}>
+              <h3 className={styles.sectionCta__title}>
+                Every big thing starts out small
+              </h3>
+              <p className={styles.sectionCta__text}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                quo quis deleniti, repellendus adipisci vitae, accusantium magni
+                aperiam illum ab earum.
+              </p>
+
+              <a href="#" className={styles.buttonOutline}>Get started - it&apos;s free</a>
+            </div>
+            <img className={styles.sectionCta__right} src="imgs/cta-girl.jpg" alt="Beautiful woman" />
           </div>
         </section>
       </main>

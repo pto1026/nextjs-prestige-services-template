@@ -42,3 +42,11 @@ body {
 
 @import "animations";
 @import "buttons";
+
+* {
+    transition: all .3s;
+}
+*:focus {
+    outline: none;
+    box-shadow: 0 0 3.2rem var(--main-color-lighter);
+}
