@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Logo from "../components/logo/logo";
-import heroImg from "../public/imgs/exotic_mountain.jpg";
 
 export default function Home() {
   return (
@@ -253,6 +252,104 @@ export default function Home() {
               <a href="#" className={styles.buttonPrimary}>
                 Get Started
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.sectionFeatures}>
+          <div className={styles.container}>
+            <div className={styles.sectionFeatures__header}>
+              <h2 className={styles.mainHeading}>Feature Breakdown</h2>
+              <h3 className={styles.sectionFeatures__headerText}>
+                Encourage that one thing to come true
+              </h3>
+            </div>
+
+            <div className={styles.features}>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/device-mobile.svg"
+                    alt="Phone icon"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  24/7 Mobile Access
+                </h5>
+                <p className={styles.featureBox__text}>
+                  Integer sed molestie arcu. Fusce accumsan, felis at rhoncus
+                  aliquet, turpis mi aliquet.
+                </p>
+              </div>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/plus-circle.svg"
+                    alt="Plus-circle icon"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  All work guaranteed
+                </h5>
+                <p className={styles.featureBox__text}>
+                  Ipsum felis et nulla. Integer accumsan, mi quis consectetur
+                  suscipit. 
+                </p>
+              </div>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/trend-up.svg"
+                    alt="Trend icon"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  Fast returns
+                </h5>
+                <p className={styles.featureBox__text}>
+                  Duis dignissim placerat posuere. Suspendisse eu blandit neque.
+                  Morbi quis ultricies purus, nec.
+                </p>
+              </div>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/lightning.svg"
+                    alt="Lightning icon"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  Hot deals
+                </h5>
+                <p className={styles.featureBox__text}>
+                  Pellentesque tincidunt, nunc eu tempus viverra, nisl magna
+                  euismod nunc, et pretium metus enim.
+                </p>
+              </div>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/user.svg"
+                    alt="User icon"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  Future influencers
+                </h5>
+                <p className={styles.featureBox__text}>
+                  Eu mollis urna pulvinar lacinia. Mauris in aliquam dui, ac
+                  feugiat erat. Aenean non.
+                </p>
+              </div>
+              <div className={styles.featureBox}>
+                <h5 className={styles.featureBox__header}>
+                  <img
+                    src="icons/chat-circle.svg"
+                    alt="Chat circle"
+                    className={styles.featureBox__icon}
+                  ></img>
+                  Focused on Discretion
+                </h5>
+                <p className={styles.featureBox__text}>
+                  In hac habitasse platea dictumst. Vivamus sollicitudin id erat
+                  auctor aliquet. Proin.
+                </p>
+              </div>
             </div>
           </div>
         </section>
