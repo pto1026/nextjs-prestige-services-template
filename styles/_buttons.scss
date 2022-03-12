@@ -1,0 +1,22 @@
+.button-secondary:link,
+.button-secondary:visited {
+  background-color: var(--main-color-lightother);
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.1rem;
+  color: var(--main-color-darker);
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 1.8rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+.button-secondary:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+}
+
+.button-secondary:active {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-.15rem);
+}

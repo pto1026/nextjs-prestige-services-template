@@ -1,0 +1,9 @@
+@keyframes bounceup {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateY(-.3rem);
+    }
+}
