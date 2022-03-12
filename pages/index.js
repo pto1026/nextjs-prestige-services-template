@@ -36,7 +36,7 @@ export default function Home() {
       <main>
         <section className={styles.sectionHero}>
           <div className={styles.container}>
-            <h2 className={styles.sectionHero__mainHeading}>Explore</h2>
+            <h2 className={styles.mainHeading}>Explore</h2>
             <div className={styles.flexed}>
               <div className={styles.headerBox}>
                 <h1 className={styles.sectionHero__header}>
@@ -95,8 +95,36 @@ export default function Home() {
         <section className={styles.sectionBrief}>
           <div className={styles.container}>
             <div className={styles.grid2cols}>
-              <div className={styles.briefLeft}>Left</div>
-              <div className={styles.briefRight}>Right</div>
+              <div className={styles.briefLeft}>
+                <h2 className={styles.mainHeading}>Go where you want</h2>
+                <p className={styles.briefLeft__text}>
+                  An impedit principes sit. Eam omnium nusquam constituam et,
+                  dolorum salutatus mel eu. Nullam urbanitas disputando ne vim,
+                  graece definitiones est ei.
+                </p>
+
+                <a className={styles.learnMoreButton} href="#">
+                  <span>
+                    <img
+                      className={styles.learnMoreButton__arrow}
+                      src="icons/caret-right.svg"
+                      alt="Right arrow"
+                    />
+                  </span>
+                  Learn more
+                </a>
+              </div>
+              <div className={styles.briefRight}>
+                <h2 className={styles.mainHeading}>Discover your true self</h2>
+                <p className={styles.briefRight__text}>
+                  Pro te partem erroribus conceptam, consul evertitur moderatius
+                  cum eu, quo purto ludus accusamus an. Eos iuvaret suscipit
+                  vulputate no, mel no regione eligendi.
+                </p>
+                <a className={styles.learnMoreButton}>
+                  <img className={styles.learnMoreButton__arrow} src="icons/caret-right.svg" alt="Right arrow"></img> Learn More
+                </a>
+              </div>
             </div>
           </div>
         </section>
