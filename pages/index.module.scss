@@ -610,7 +610,7 @@
 
     .container {
         padding: 9.6rem 3.2rem;
-        background-image: linear-gradient(to bottom right, #4cddb2, #32c398);
+        background-image: linear-gradient(to bottom right, var(--main-color-lightest), #32c398);
         display: flex;
         align-items: center;
         border-radius: 1.1rem;
