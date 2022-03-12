@@ -42,7 +42,7 @@ export default function Home() {
             <div className={styles.flexed}>
               <div className={styles.headerBox}>
                 <h1 className={styles.sectionHero__header}>
-                  All your ideal destinations in one spot.
+                  All your ideal destinations in one spot
                 </h1>
                 <p className={styles.sectionHero__headerText}>
                   Lorem ipsum dolor sit amet, eirmod vituperata contentiones at
