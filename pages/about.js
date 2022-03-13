@@ -6,7 +6,7 @@ export default function About() {
     <div className={styles.root}>
       <div className={styles.navbar}>
         <div className={styles.navbar__company}>
-          <img className={styles.navbar__logo} />
+          <img className={styles.navbar__logo} src="icons/airplane-takeoff.svg" alt="Plane icon" />
           <p className={styles.navbar__companyname}>Prestige Services</p>
         </div>
         <nav className={styles.navbar__nav}>
