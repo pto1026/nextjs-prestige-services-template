@@ -688,6 +688,10 @@
         grid-template-columns: 1fr;
     }
 
+    .briefLeft {
+        margin-bottom: 6rem;
+    }
+
     .flexed {
         flex-direction: column;
     }
@@ -699,9 +703,6 @@
 @media (max-width: 41rem) {
     .sectionStats .container {
         flex-direction: column;
-    }
-    .briefLeft {
-        margin-bottom: 6rem;
     }
     
     .logo:last-child {
